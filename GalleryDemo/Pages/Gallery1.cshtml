@@ -1,0 +1,10 @@
+﻿@page
+@model GalleryDemo.Pages.Gallery1Model
+@{
+}
+
+
+@foreach (var file in Model.FileList){
+
+    <img src="@Url.Action("Get","Pic",new { FileName=file})" style="max-height:200px"/>
+}

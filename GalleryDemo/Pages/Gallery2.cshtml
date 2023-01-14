@@ -1,0 +1,10 @@
+﻿@page
+@model GalleryDemo.Pages.Gallery2Model
+@{
+}
+
+@foreach (var file in Model.FileList)
+{
+
+    <img src="@file" style="max-height:200px" />
+}
